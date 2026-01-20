@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Forms</title>
+</head>
+<body>
+    <h1>Lists and Forms</h1>
+    <h2>Types of Lists</h2>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Tea</li>
+        <li>Coffee
+            <ol>
+                <li>Cold Coffee</li>
+                <li>Hot Coffee</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana
+            <ul>
+                <li>Elaichi banana</li>
+                <li>Red Banana</li>
+            </ul>
+        </li>
+        <li>Mango</li>
+    </ul>
+
+    <h2>HTML Form Example</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
