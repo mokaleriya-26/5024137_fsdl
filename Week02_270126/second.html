@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6999e0;
+            color: #0e0d0d;
+            margin: 20px;
+        }
+        h1 {
+            color: #6da6e7;
+        }
+        /* ===== Class Selector ===== */
+        .box {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        /* ===== ID Selector ===== */
+        #main-title {
+            text-align: center;
+            color: #f9fbfc;
+        }
+        /* ===== Group Selector ===== */
+        h2, h3 {
+            color: #256ad1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #006ce7;
+            color: #fff;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ol {
+            list-style-type: decimal-leading-zero;
+        }
+        li {
+            margin: 5px 0;
+        }
+        /* ===== Descendant Selector ===== */
+        .box p {
+            color: #555;
+        }
+        /* ===== Attribute Selector ===== */
+        input[type="text"] {
+            padding: 6px;
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Department Exchange</h1>
+    <div class="box">
+        <h2>STUDENTS</h2>
+        <table>
+            <tr>
+                <th>Roll no.</th>
+                <th>Name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>5024137</td>
+                <td>Riya Pradeep Mokale</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>1024136</td>
+                <td>Merin Anna Joys</td>
+                <td>Comps</td>
+            </tr>
+            <tr>
+                <td>3024135</td>
+                <td>Snehal Sebastian Mascarenhas</td>
+                <td>CSE</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <h2>List Example</h2>
+        <h3>Known Concept</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>To be taught</h3>
+        <ol>
+            <li>Angular.js</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+        </ol>
+    </div>
+    <div class="box">
+        <h2>Selectors Demo</h2>
+        <p>This paragraph is styled using a <b>descendant selector</b>.</p>
+        <input type="text" placeholder="Type here">
+    </div>
+</body>
+</html>

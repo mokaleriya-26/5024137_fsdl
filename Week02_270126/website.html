@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus - Your Trusted Medical Partner</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <img src="healthcare.webp" alt="HealthCare Plus Logo" width="120" height="120" align="left">
+    <center>
+        <h1>Welcome to HealthCare Plus Hospital</h1>
+        <p><strong>Providing Quality Healthcare Services for Your Family</strong></p>
+    </center>
+    <table border="1" width="100%" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center"><a href="#home">Home</a></td>
+            <td align="center"><a href="#about">About Us</a></td>
+            <td align="center"><a href="#services">Medical Services</a></td>
+            <td align="center"><a href="#doctors">Our Doctors</a></td>
+            <td align="center"><a href="#appointment">Book Appointment</a></td>
+        </tr>
+    </table>
+
+    <h2 id="home">Home</h2>
+    <p>Welcome to HealthCare Plus, a leading multi-specialty hospital dedicated to providing comprehensive healthcare services. We are committed to delivering excellence in medical care with state-of-the-art facilities and experienced healthcare professionals.</p>
+    
+    <h3>Hospital Overview</h3>
+    <img src="healthcare.webp" alt="HealthCare Plus Hospital" width="300" height="200">
+
+    <h3>Hospital Tour Video</h3>
+    <video width="400" height="300" controls>
+        <source src="hospital-tour.mp4" type="video/mp4">
+        Your browser doesn't support video.
+    </video>
+
+    <h3>Welcome Message</h3>
+    <audio controls width="400">
+        <source src="welcome-message.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+    </audio>
+
+    <h2 id="about">About Us</h2>
+    <p>HealthCare Plus has been serving the community for over 15 years with a mission to provide affordable and quality healthcare to all.</p>
+    <p>Why Choose HealthCare Plus:</p>
+    <ul>
+        <li>Experienced and Board-Certified Doctors</li>
+        <li>Modern Medical Equipment and Technology</li>
+        <li>24/7 Emergency Services</li>
+        <li>Affordable Treatment Plans</li>
+        <li>Patient-Centered Care</li>
+    </ul>
+
+    <h2 id="services">Medical Services</h2>
+    <h3>Departments We Offer</h3>
+    <ol>
+        <li>General Medicine</li>
+        <li>Cardiology</li>
+        <li>Orthopedics</li>
+        <li>Pediatrics</li>
+        <li>Gynecology</li>
+        <li>Emergency Medicine</li>
+    </ol>
+
+    <h3>Department Information</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Head of Department</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>General Medicine</td>
+                <td>Dr. Rajesh Kumar</td>
+                <td>Ext. 101</td>
+            </tr>
+            <tr>
+                <td>Cardiology</td>
+                <td>Dr. Priya Sharma</td>
+                <td>Ext. 102</td>
+            </tr>
+            <tr>
+                <td>Orthopedics</td>
+                <td>Dr. Amit Singh</td>
+                <td>Ext. 103</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Doctors Section -->
+    <h2 id="doctors">Our Doctors</h2>
+    <h3>Meet Our Specialists</h3>
+    <ul>
+        <li><strong>Dr. Rajesh Kumar</strong> - MBBS, MD - General Medicine with 20 years experience</li>
+        <li><strong>Dr. Priya Sharma</strong> - MBBS, DM - Cardiology with 15 years experience</li>
+        <li><strong>Dr. Amit Singh</strong> - MBBS, MS - Orthopedics with 12 years experience</li>
+        <li><strong>Dr. Neha Gupta</strong> - MBBS, MD - Pediatrics with 10 years experience</li>
+    </ul>
+
+    <!-- Appointment Section -->
+    <h2 id="appointment">Book an Appointment</h2>
+    <p>Schedule your consultation with our specialist doctors:</p>
+    
+    <form>
+        <label for="name">Patient Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+        
+        <label for="department">Select Department:</label><br>
+        <select id="department" name="department">
+            <option>-- Select Department --</option>
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Gynecology</option>
+        </select><br><br>
+        
+        <label for="date">Preferred Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <label for="symptoms">Symptoms/Reason:</label><br>
+        <textarea id="symptoms" name="symptoms" rows="4" cols="40" placeholder="Describe your symptoms"></textarea><br><br>
+        
+        <input type="submit" value="Book Appointment">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <p><strong>Contact Information:</strong></p>
+        <p>Email: contact@healthcareplus.com</p>
+        <p>Emergency Phone: +1-800-911-HELP (4357)</p>
+        <p>General Phone: +1-800-123-CARE (2273)</p>
+        <p>Address: 456 Medical Center Lane, Healthcare City, Country</p>
+        <p>Hours: 24/7 Emergency | OPD: 9 AM - 6 PM (Mon-Sat)</p>
+        <p><small>&copy; 2026 HealthCare Plus Hospital. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>

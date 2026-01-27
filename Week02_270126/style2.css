@@ -1,0 +1,131 @@
+/* ===== Global ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f9fc;          /* very light medical blue */
+    color: #1f2d3d;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: #0b5ed7;                     /* healthcare blue */
+}
+
+h2 {
+    color: #0b5ed7;
+    border-bottom: 2px solid #cfe2ff;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #198754;                     /* medical green */
+}
+
+/* Logo image spacing */
+img {
+    margin-right: 15px;
+}
+
+/* Navigation Table */
+table {
+    background-color: #0b5ed7;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table td {
+    border: none;
+}
+
+table a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Content paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Lists */
+ul li,
+ol li {
+    margin-bottom: 6px;
+}
+
+/* Department table */
+table thead th {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+table tbody td {
+    background-color: #ffffff;
+}
+
+/* Forms */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 500px;
+    border: 1px solid #cfe2ff;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background-color: #0b5ed7;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #084298;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+input[type="reset"]:hover {
+    background-color: #565e64;
+}
+
+/* Footer */
+footer {
+    background-color: #e9f2fb;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #cfe2ff;
+}
+
+footer p {
+    margin: 4px 0;
+}
