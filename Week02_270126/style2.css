@@ -48,13 +48,19 @@ table:first-of-type {
     background-color: #0b5ed7;
     border-collapse: collapse;
 }
+/* Navigation hover effect */
 table:first-of-type td a {
-    color: #0b5ed7;
-    font-weight: 600;
+    display: inline-block;
+    padding: 8px 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-table:first-of-type a:hover {
-    text-decoration: underline;
+
+table:first-of-type td a:hover {
+    background-color: #084298;
+    color: #ffffff;
+    border-radius: 4px;
 }
+
 p,ul,ol {
     margin-bottom: 20px;
 }
