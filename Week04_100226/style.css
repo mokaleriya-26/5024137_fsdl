@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Subjects section */
+.subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.subject {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.subject label {
+    font-weight: 600;
+}
+
+.subject input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    width: 80px;
+    text-align: center;
+}
+
+.subject span {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+/* Different background colors */
+.sub1 {
+    background: #e0f2fe; /* light blue */
+}
+
+.sub2 {
+    background: #ecfeff; /* light cyan */
+}
+
+.sub3 {
+    background: #f0fdf4; /* light green */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    display: none;
+}
+
+.pass {
+    background: #dcfce7;
+    color: #065f46;
+}
+
+.fail {
+    background: #ffe4e6;
+    color: #9f1239;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}

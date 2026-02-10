@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+        <h1>🎓 Student Result Portal</h1>
+        <p class="subtitle">Enter marks (out of 100)</p>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Student Name">
+        </div>
+
+        <!-- Subjects -->
+        <div class="subjects">
+            <div class="subject sub1">
+                <label>Subject 1</label>
+                <input type="number" id="m1" placeholder="Marks">
+                <span>/ 100</span>
+            </div>
+
+            <div class="subject sub2">
+                <label>Subject 2</label>
+                <input type="number" id="m2" placeholder="Marks">
+                <span>/ 100</span>
+            </div>
+
+            <div class="subject sub3">
+                <label>Subject 3</label>
+                <input type="number" id="m3" placeholder="Marks">
+                <span>/ 100</span>
+            </div>
+        </div>
+
+        <button onclick="calculateResult()">Generate Result</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
