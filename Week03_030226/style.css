@@ -1,0 +1,21 @@
+/* Logo image (header) */
+.logo {
+    width: 65px;      /* smaller logo */
+    height: 65px;
+    border-radius: 50%;
+}
+
+/* Home section hospital image */
+img.img-fluid {
+    max-width: 350px;   /* reduce size */
+    height: auto;
+    display: block;
+    margin: auto;       /* center image */
+}
+
+/* Doctor cards (if you add images later) */
+.card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+}
