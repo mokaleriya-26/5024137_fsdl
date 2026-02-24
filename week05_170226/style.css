@@ -1,0 +1,43 @@
+body {
+    background: #f4f8fb;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #4da3ff);
+    color: white;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+input.invalid, select.invalid {
+    border: 1px solid red;
+}
+
+input.valid, select.valid {
+    border: 1px solid green;
+}
+
+#successMsg {
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #0b1320;
+    color: white;
+}
