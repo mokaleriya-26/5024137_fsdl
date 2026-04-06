@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+}
+
+/* Navbar */
+nav {
+  background: #1e293b;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #cbd5f5;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Input section */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* Task item */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+}
+
+.high { border-left: 5px solid #ef4444; }
+.medium { border-left: 5px solid #f59e0b; }
+.low { border-left: 5px solid #10b981; }
+
+.empty {
+  text-align: center;
+  color: gray;
+}
