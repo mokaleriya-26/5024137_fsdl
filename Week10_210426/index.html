@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html ng-app="studentApp">
+<head>
+    <title>Student Record</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+/* Center everything perfectly */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form layout fix */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Validation colors */
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
+    border: 2px solid green;
+}
+
+/* Button alignment */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007bff;
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Table fix */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #4facfe;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Delete button */
+.delete-btn {
+    background: red;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Error text */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+}
+</style>
+</head>
+
+<body ng-controller="studentController">
+
+<div class="container">
+
+<h2>Student Record System</h2>
+
+<form name="studentForm" ng-submit="addStudent()" novalidate>
+
+    <label>Name:</label>
+    <input type="text" name="name" ng-model="student.name" required ng-minlength="3">
+    <div class="error" ng-show="studentForm.name.$touched && studentForm.name.$invalid">
+        Name must be at least 3 characters
+    </div>
+
+    <label>Email:</label>
+    <input type="email" name="email" ng-model="student.email" required>
+    <div class="error" ng-show="studentForm.email.$touched && studentForm.email.$invalid">
+        Enter a valid email
+    </div>
+
+    <label>Age:</label>
+    <input type="number" name="age" ng-model="student.age" required min="18" max="60">
+    <div class="error" ng-show="studentForm.age.$touched && studentForm.age.$invalid">
+        Age must be between 18 and 60
+    </div>
+
+    <button type="submit" ng-disabled="studentForm.$invalid">
+        Add Student
+    </button>
+
+</form>
+
+<h3>Student List</h3>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+
+    <tr ng-repeat="s in students">
+        <td>{{s.name}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.age}}</td>
+        <td>
+            <button class="delete-btn" ng-click="deleteStudent($index)">
+                Delete
+            </button>
+        </td>
+    </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module("studentApp", []);
+
+app.controller("studentController", function($scope) {
+
+    $scope.students = [];
+
+    $scope.addStudent = function() {
+        if ($scope.studentForm.$valid) {
+            $scope.students.push({
+                name: $scope.student.name,
+                email: $scope.student.email,
+                age: $scope.student.age
+            });
+
+            $scope.student = {};
+            $scope.studentForm.$setPristine();
+            $scope.studentForm.$setUntouched();
+        }
+    };
+
+    $scope.deleteStudent = function(index) {
+        $scope.students.splice(index, 1);
+    };
+
+});
+</script>
+
+</body>
+</html>
