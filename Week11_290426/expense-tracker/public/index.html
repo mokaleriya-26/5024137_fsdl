@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💸 Expense Tracker</h1>
+
+  <div class="card balance">
+    <h2>Total Balance</h2>
+    <h1 id="balance">₹0</h1>
+  </div>
+
+  <form id="expenseForm" class="card form">
+    <div class="form-group">
+      <input type="text" id="title" placeholder="Expense Title" required>
+      <input type="number" id="amount" placeholder="Amount (₹)" required>
+    </div>
+    <div class="form-group">
+      <input type="text" id="category" placeholder="Category">
+    </div>
+    <button type="submit">➕ Add Expense</button>
+  </form>
+
+  <div class="card">
+    <h2>History</h2>
+    <ul id="list"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
